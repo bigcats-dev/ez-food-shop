@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "ez-food-app",
+    "slug": "ez-food-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f00"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1E874B"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.pimpae.ezfoodapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "backgroundColor": "#ffffff",
+      "themeColor": "#1E874B"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e8bc3aa2-67b1-4ec5-b70a-f720dd95bbb3"
+      }
+    },
+    "owner": "pimpae"
+  }
+}
