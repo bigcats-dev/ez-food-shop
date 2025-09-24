@@ -13,7 +13,8 @@
       "backgroundColor": "#f00"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pimpae.ezfoodapp"
     },
     "android": {
       "adaptiveIcon": {
