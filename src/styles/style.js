@@ -43,6 +43,9 @@ export default StyleSheet.create({
   mColor: {
     color: '#1E874B'
   },
+  blackColor: {
+    color: '#000'
+  },
   input: {
     marginBottom: 10,
     backgroundColor: '#fff',
@@ -196,6 +199,46 @@ export default StyleSheet.create({
     marginTop: 20,
     borderRadius: 30,
     paddingVertical: 8,
+  },
+  cardOrder: {
+    borderRadius: 16,
+    elevation: 3,
+    backgroundColor: '#ffffff',
+    paddingVertical: 8,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+    marginTop: 10,
+  },
+  viewInOrder: {
+    flexDirection: "row", 
+    padding: 12 ,
+    backgroundColor: "#ffffff"
+  },
+  containerOrder: {
+    flex: 1,
+    backgroundColor: '#f6fbff',
+    padding: 10,
+    paddingBottom: 50,
+    paddingTop: 50,
+    justifyContent: 'space-between',
+  },
+  cardOrderDes:{
+    marginTop: 10, 
+    padding: 16,  
+    backgroundColor: "#fff",
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 2 },
+  },
+  btnOr: {
+    backgroundColor: '#1E874B',
+    borderRadius: 100,
+    paddingVertical: 8,  
+    color: '#ffffff',
+    fontSize: 20,
+    marginTop: 10
   },
 });
 

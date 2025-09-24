@@ -27,6 +27,24 @@ export default function HomeScreen() {
             {/* Main Content */}
             <ScrollView>
                 <View style={{ paddingHorizontal: 20, gap: 16, marginTop: 20 }}>
+                    {/* Card 0: order */}
+                    <Card style={styles.card} onPress={() => navigation.navigate('OrderHistory')}>
+                        <Card.Content style={{ flexDirection: 'row', alignItems: 'center' }}>
+                            <Image
+                                source={require('../../assets/icon_menu0.png')}
+                                style={{ width: 50, height: 50, marginRight: 16, borderRadius: 100 }}
+                            />
+                            <View style={{ flex: 1 }}>
+                                <Text style={styles.title}>ออเดอร์</Text>
+                                <Text variant="bodySmall" style={{ color: '#777' }}>
+                                    จัดการรายการสั่งซื้อของคุณ ดูประวัติออเดอร์ทั้งหมด
+                                </Text>
+                                <Text style={{ color: '#e53935', marginTop: 6 }}>
+                                    จัดการออเดอร์
+                                </Text>
+                            </View>
+                        </Card.Content>
+                    </Card>
                     {/* Card 1: โปรไฟล์ร้าน */}
                     <Card style={styles.card} onPress={() => navigation.navigate('Profile')}>
                         <Card.Content style={{ flexDirection: 'row', alignItems: 'center' }}>

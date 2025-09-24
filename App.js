@@ -2,9 +2,7 @@ import * as React from 'react';
 import { View, Text, StyleSheet, Image} from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { lightTheme, darkTheme } from './src/theme';
-import ThemeSwitcher from './src/components/ThemeSwitcher';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'; 
 import LoginScreen from './src/screens/LoginScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import RegisterScreen from './src/screens/RegisterScreen';
@@ -17,6 +15,9 @@ import BankAccount from './src/screens/BankAccount';
 import AddMenu from './src/screens/AddMenu';
 import AddCategory from './src/screens/AddCategory';
 import AddBusinessTime from './src/screens/AddBusinessTime';
+import OrderHistory from './src/screens/OrderHistory';
+import OrderDetail from './src/screens/OrderDetail';
+
 
 
 
@@ -62,6 +63,8 @@ export default function App() {
             <Stack.Screen name="AddMenu" component={AddMenu} options={{ headerShown: false }} />
             <Stack.Screen name="AddCategory" component={AddCategory} options={{ headerShown: false }} />
             <Stack.Screen name="AddBusinessTime" component={AddBusinessTime} options={{ headerShown: false }} />
+            <Stack.Screen name="OrderHistory" component={OrderHistory} options={{ headerShown: false }} />
+            <Stack.Screen name="OrderDetail" component={OrderDetail} options={{ headerShown: false }} />
             <Stack.Screen name="BankAccount" component={BankAccount} options={{ headerShown: false }} />
         </Stack.Navigator>
 
